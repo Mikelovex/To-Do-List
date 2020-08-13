@@ -6,8 +6,16 @@
 }
 
 body {
-  background-color: cornflowerblue;
+  background-color: rgb(89, 89, 206);
   font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 700px;
+  min-height: 600px;
+  background-color: cornflowerblue;
 }
 
 header {
@@ -19,7 +27,7 @@ header h1 {
 
 header,
 form {
-  min-height: 20vh;
+  min-height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +60,7 @@ form button:hover {
 }
 
 .todo-list {
-  min-width: 30%;
+  min-width: 50%;
   list-style: none;
 }
 
@@ -79,10 +87,19 @@ form button:hover {
   padding: 1rem;
   cursor: pointer;
   font-size: 1rem;
+  transition: 0.5s;
+}
+
+.trash-btn:hover {
+  background: #d45f3f;
 }
 
 .complete-btn {
   background: rgba(73, 204, 73);
+}
+
+.complete-btn:hover {
+  background: rgb(61, 163, 61);
 }
 
 .todo-item {
